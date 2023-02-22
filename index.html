@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Homework 20 </title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <section id="header">
+            <div class="container">
+                <img src="./Brittany Isom Logo (4).png" class="logo">
+                <ul class="nav">
+                    <li class="nav-item">
+                      <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Resume</a>
+                    </li>
+                  </ul>
+                  <div class="jumbotron jumbotron-fluid">
+                    <div class="container">
+                      <h1 class="display-4">Women Of The World</h1>
+                      <p class="lead">Website Redesign Case Study</p>
+                      <p> Case Study</p>
+                    </div>
+                    <div class="header-text">
+                        <h1> Introduction</h1>
+                        <span class="square">
+                
+                        </span>
+                        <p> Women of the World is an Non-For-Profit that looks to empower and help women that have been forcibly displaced in society from every corner of the world. The site has a very colorful design that looks to show it’s multi-cultural design. At first glance, it does make it hard to take in the information - so our mission is to maintain that warmth and attract the eyes around the page but all the while allow for the information to be easily absorbed. </p>
+                        <button class="common-btn"> Read More</button>
+                    </div>
+                    
+                    <div class="line">
+                        <span class="line-1"></span><br>
+                        <span class="line-2"></span><br>
+                        <span class="line-3"></span>
+                    </div> 
+                  </div>
+            </div>
+        </section>
+
+        <nav id="sideNav">
+            <ul>
+                <li><a href="#">Project Overview</a></li>
+                <li><a href="#">User Research</a></li>
+                <li><a href="#">User Testing</a></li>
+                <li><a href="#">Website Analysis</a></li>
+                <li><a href="#">Website Rebrand</a></li>
+                <li><a href="#">Prototype</a></li>
+            </ul>
+        </nav>
+        <img src="./menu.png" id="menuBtn">
+        <script>
+            var menuBtn = document.getElementById("menuBtn");
+            var sideNav = document.getElementById("sideNav");
+            sideNav.style.right = "250px";
+            menuBtn.onclick = function(){
+                if(sideNav.style.right == "-250px"){
+                    sideNav.style.right = "0";
+                }
+                else{
+                    sideNav.style.right = "-250px"
+                }
+            }
+        </script>
+       
+    </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</html>
