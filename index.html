@@ -1,77 +1,231 @@
-<!DOCTYPE html>
 <html>
-    <head>
-        <title> Homework 20 </title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-        <link rel="stylesheet" href="./style.css">
-    </head>
-    <body>
-        <section id="header">
-            <div class="container">
-                <img src="./Brittany Isom Logo (4).png" class="logo">
-                <ul class="nav">
-                    <li class="nav-item">
-                      <a class="nav-link active" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">About</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Resume</a>
-                    </li>
-                  </ul>
-                  <div class="jumbotron jumbotron-fluid">
-                    <div class="container">
-                      <h1 class="display-4">Women Of The World</h1>
-                      <p class="lead">Website Redesign Case Study</p>
-                      <p> Case Study</p>
-                    </div>
-                    <div class="header-text">
-                        <h1> Introduction</h1>
-                        <span class="square">
-                
-                        </span>
-                        <p> Women of the World is an Non-For-Profit that looks to empower and help women that have been forcibly displaced in society from every corner of the world. The site has a very colorful design that looks to show it’s multi-cultural design. At first glance, it does make it hard to take in the information - so our mission is to maintain that warmth and attract the eyes around the page but all the while allow for the information to be easily absorbed. </p>
-                        <button class="common-btn"> Read More</button>
-                    </div>
-                    
-                    <div class="line">
-                        <span class="line-1"></span><br>
-                        <span class="line-2"></span><br>
-                        <span class="line-3"></span>
-                    </div> 
-                  </div>
-            </div>
-        </section>
-
-        <nav id="sideNav">
-            <ul>
-                <li><a href="#">Project Overview</a></li>
-                <li><a href="#">User Research</a></li>
-                <li><a href="#">User Testing</a></li>
-                <li><a href="#">Website Analysis</a></li>
-                <li><a href="#">Website Rebrand</a></li>
-                <li><a href="#">Prototype</a></li>
-            </ul>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UX_UI_HW_20</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+<link rel="stylesheet" href="./style.css">
+<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,600,700&display=swap" rel="stylesheet">
+<ul class="nav">
+    <li class="nav-item">
+      <a class="nav-link active" href="#">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">About</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Contact</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Resume</a>
+    </li>
+  </ul>
+</head>
+<body>
+    <section class="header">
+        
+        <nav>
+            <a href="index.html"><img src="./Brittany Isom Logo (4).png"></a>
         </nav>
-        <img src="./menu.png" id="menuBtn">
-        <script>
-            var menuBtn = document.getElementById("menuBtn");
-            var sideNav = document.getElementById("sideNav");
-            sideNav.style.right = "250px";
-            menuBtn.onclick = function(){
-                if(sideNav.style.right == "-250px"){
-                    sideNav.style.right = "0";
-                }
-                else{
-                    sideNav.style.right = "-250px"
-                }
-            }
-        </script>
-       
-    </body>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+        
+        <div class="text-box">
+            <h1>Women Of The World</h1>
+            <h2> Website Redesign</h2>
+            <h3> Case Study </h3>
+            <p>Women of the World is an Non-For-Profit that looks to empower and help women that have been forcibly displaced in society from every corner of the world. The site has a very colorful design that looks to show it’s multi-cultural design. At first glance, it does make it hard to take in the information - so our mission is to maintain that warmth and attract the eyes around the page but all the while allow for the information to be easily absorbed.</p>
+        </div>
+    </section>
+    
+
+    
+    <section class="ProjectOverview">
+        <h1>Project Overview</h1>
+        <p>Bootcamp Group Project</p>
+        <p> Timeline- 2 Weeks</p>
+        <div class="row">
+            <div class="course-col">
+                <h3>User Insight</h3>
+                <p>Users need a way to easily find volunteer opportunities where they can connect with others and feel like they are is making a difference. It is imperative that the site offers a strong message, clean and easy to navigate layout, and clear and direct information.</p>
+            </div>
+            <div class="course-col">
+                <h3>Problem</h3>
+                <p>Through our research we discovered that most users found the website unappealing in regard to navigation, interface, and functionality. Therefore, we believe that people are being driven away from supporting the cause because the site doesn’t offer a strong message or design that pulls people in and connects directly with their mission.</p>
+            </div>
+            <div class="course-col">
+                <h3>Solution</h3>
+                <p>Our goal is to reimagine the message and the layout of information across multiple pages in a way that benefits the user and helps them to connect with that data more personally.</p>
+            </div>
+        </div>
+    </section>
+    
+<!---------- Website Analysis ---------->
+    
+    <section class="websiteanalysis">
+        <h1>Website Analysis</h1>
+        <p>We conducted an analysis of Women of the World's current website as the initial step in our redesign effort. Despite the commendable objective of the non-profit organization, the message was not effectively conveyed through the current web design. The organization's mission statement holds great significance; however, it was not immediately apparent to users on how they could support the cause.</p>
+            <div class="row">
+                <div class="campus-col">
+                    <img src=".//website analysis current website.png">
+                    <div class="layer">
+                        <h3>Current Website</h3>
+                    </div>
+                </div>
+                <div class="campus-col">
+                    <img src="./website analysis competitor.png">
+                    <div class="layer">
+                        <h3>Competitor Analysis</h3>
+                    </div>
+                </div>
+                <div class="campus-col">
+                    <img src="./user flow web.png">
+                    <div class="layer">
+                        <h3>User Flow</h3>
+                    </div>
+                </div>
+                
+            </div>
+    </section>
+    
+<!---------- User Research ---------->
+    
+    <section class="user-research">
+        <h1>User Research</h1>
+        <p>How might we improve their website in order to convey a strong and clear message that users can connect with more personally?  </p>
+            <div class="row">
+                <div class="facility-col">
+                    <img src="./user persona wow.png">
+                    <h3>User Persona</h3>
+                    
+                </div>
+                <div class="facility-col">
+                    <img src="./problem statement wow.png">
+                    <h3>Problem Statement </h3>
+                    
+                </div>
+                <div class="facility-col">
+                    <img src="./empathy map.png">
+                    <h3>Empathy Map</h3>
+                    
+                </div>
+            </div>
+    </section>
+
+    <section class="user-testing">
+        <h1>User Testing</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <div class="row">
+                <div class="testing-col">
+                    <img src="images/library.png">
+                    <h3>World Class Library</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquet turpis nulla.</p>
+                </div>
+                <div class="testing-col">
+                    <img src="images/basketball.png">
+                    <h3>Largest Play Ground</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquet turpis nulla.</p>
+                </div>
+                <div class="testing-col">
+                    <img src="images/cafeteria.png">
+                    <h3>Tasty and Healthy Food</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquet turpis nulla.</p>
+                </div>
+            </div>
+    </section>
+
+    <section class="website-rebrand">
+        <h1>Website Rebrand</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <div class="row">
+                <div class="facility-col">
+                    <img src="images/library.png">
+                    <h3>World Class Library</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquet turpis nulla.</p>
+                </div>
+                <div class="facility-col">
+                    <img src="images/basketball.png">
+                    <h3>Largest Play Ground</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquet turpis nulla.</p>
+                </div>
+                <div class="facility-col">
+                    <img src="images/cafeteria.png">
+                    <h3>Tasty and Healthy Food</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquet turpis nulla.</p>
+                </div>
+            </div>
+    </section>
+    
+    
+<!---------- testimonials ---------->
+    
+    <section class="testimonials">
+        <h1>Prototyping</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <div class="row">
+                <div class="testimonial-col">
+                    <img src="images/user1.jpg">
+                    <div> 
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquet turpis nulla, eleifend faucibus est sollicitudin ut. Maecenas ut venenatis ex, et dapibus purus.</p>
+                        <h3>Christine Berkley</h3>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                </div>
+                <div class="testimonial-col">
+                    <img src="images/user2.jpg">
+                    <div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquet turpis nulla, eleifend faucibus est sollicitudin ut. Maecenas ut venenatis ex, et dapibus purus.</p>
+                        <h3>David Byer</h3>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                </div>
+                
+            </div>
+    </section>
+    
+<!------ Call To Action ------>
+
+<section class="cta">
+    
+       <h1>Final Thoughts<br>& Next Steps</h1>
+        
+    
+</section>    
+ 
+<!-------- footer ---------->
+
+<section class="footer">
+        <h4>The End </h4>
+        <p>Want to work with me?</p>
+        <p> Feel free to contact me!</p>
+        <div class="icons">
+            <a href="https://www.youtube.com/c/EasyTutorialsVideo?sub_confirmation=1"><i class="fa fa-facebook"></i></a>
+            <a href="https://www.youtube.com/c/EasyTutorialsVideo?sub_confirmation=1"><i class="fa fa-twitter"></i></a>
+            <a href="https://www.youtube.com/c/EasyTutorialsVideo?sub_confirmation=1"><i class="fa fa-instagram"></i></a>
+            <a href="https://www.youtube.com/c/EasyTutorialsVideo?sub_confirmation=1"><i class="fa fa-linkedin"></i></a>
+            
+        </div>
+        <a href="https://www.youtube.com/c/EasyTutorialsVideo?sub_confirmation=1" class="footer-link"><p>Brittany Isom <i class="fa fa-heart-o"></i> UX/UI Designer</p></a>
+</section>    
+  
+  
+<!----JavaScript for toggle menu---->
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu() {
+        navLinks.style.right = "0";
+    }
+
+    function hideMenu() {
+        navLinks.style.right = "-200px";
+    }
+</script> 
+    
+</body>
 </html>
